@@ -15,35 +15,35 @@ public class EaEhomeDk {
     private String salesNo;
 
     //'密码'
-    @Column
+    @Column(name = "password")
     private String password;
 
     //'联系人'
-    @Column
+    @Column(name = "agentcontact")
     private String agentcontact;
 
     //'排班日期'
-    @Column
+    @Column(name = "arrange")
     private String arrange;
 
     //'所属的代理'
-    @Column
+    @Column(name = "daili_id")
     private Long daili_id;
 
     //'打卡时间1'
-    @Column
+    @Column(name = "basetime1")
     private String basetime1;
 
     //'打卡时间2'
-    @Column
+    @Column(name = "basetime2")
     private String basetime2;
 
     //'打卡时间3'
-    @Column
+    @Column(name = "basetime3")
     private String basetime3;
 
     //'打卡时间4'
-    @Column
+    @Column(name = "basetime4")
     private String basetime4;
 
     //'bssId地址'
@@ -51,102 +51,102 @@ public class EaEhomeDk {
     private String bssId;
 
     //'保留'
-    @Column
+    @Column(name = "restype")
     private String restype;
 
     //'排序'
-    @Column
+    @Column(name = "sort")
     private Integer sort;
 
     //'状态(0:禁用,1:启用)'
-    @Column
+    @Column(name = "status")
     private Byte status;
 
     //'备注说明'
-    @Column
+    @Column(name = "remark")
     private String remark;
 
     //'工号授权到期时间'
-    @Column
+    @Column(name = "end_time")
     private Long end_time;
 
     //执行结果
-    @Column
+    @Column(name = "exec_results")
     private String exec_results;
 
     //'创建时间'
-    @Column
+    @Column(name = "create_time")
     private Long create_time;
 
     //'更新时间'
-    @Column
+    @Column(name = "update_time")
     private Long update_time;
 
     //'删除时间'
-    @Column
+    @Column(name = "delete_time")
     private Long delete_time;
 
     //'执行时间1'
-    @Column
+    @Column(name = "exectime1")
     private Byte exectime1;
 
     //'执行时间2'
-    @Column
+    @Column(name = "exectime2")
     private Byte exectime2;
 
     //'执行时间3'
-    @Column
+    @Column(name = "exectime3")
     private Byte exectime3;
 
     //'执行时间4'
-    @Column
+    @Column(name = "exectime4")
     private Byte exectime4;
 
     //'随机时间1'
-    @Column
+    @Column(name = "randomtime1")
     private String randomtime1;
 
     //'随机时间2'
-    @Column
+    @Column(name = "randomtime2")
     private String randomtime2;
 
     //'随机时间3'
-    @Column
+    @Column(name = "randomtime3")
     private String randomtime3;
 
     //'随机时间4'
-    @Column
+    @Column(name = "randomtime4")
     private String randomtime4;
 
     //'外链PID'
-    @Column
+    @Column(name = "pid")
     private String pid;
 
     //'代理姓名'
-    @Column
+    @Column(name = "daili_username")
     private String daili_username;
 
     //'他人刷脸'
-    @Column
+    @Column(name = "iswithoutPass")
     private Byte iswithoutPass;
 
     //'他人刷脸工号'
-    @Column
+    @Column(name = "exsalesNo")
     private String exsalesNo;
 
     //'他人刷脸密码'
-    @Column
+    @Column(name = "expassword")
     private String expassword;
 
     //'职场ID'
-    @Column
+    @Column(name = "zcid")
     private String zcid;
 
     //'验证打卡'
-    @Column
+    @Column(name = "yzdk")
     private String yzdk;
 
     //'批量打卡'
-    @Column
+    @Column(name = "pldk")
     private String pldk;
 }
