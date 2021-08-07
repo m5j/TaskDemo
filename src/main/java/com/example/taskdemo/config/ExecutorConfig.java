@@ -16,8 +16,8 @@ public class ExecutorConfig {
     public Executor executor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         executor.setThreadNamePrefix("任务线程池");
-        executor.setMaxPoolSize(3);
-        executor.setCorePoolSize(2);
+        executor.setMaxPoolSize(5);
+        executor.setCorePoolSize(5);
         executor.setQueueCapacity(10000);
         executor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
         return executor;

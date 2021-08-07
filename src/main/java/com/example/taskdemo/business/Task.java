@@ -63,7 +63,8 @@ public class Task {
         long sTime = System.currentTimeMillis();
 
         Example example = new Example(EaEhomeDk.class);
-        example.createCriteria().andEqualTo("randomtime1", currentTimeStr);
+        example.createCriteria()
+                .andEqualTo("randomtime1", currentTimeStr);
         List<EaEhomeDk> list = eaEhomeDkMapper.selectByExample(example);
         System.out.println(currentTimeStr + "需要处理的数据条数：" + list.size());
 
@@ -112,7 +113,7 @@ public class Task {
 
         ResponseResult responseResult = GsonUtil.jsonToBean(responseString, ResponseResult.class);
         if (responseResult == null) {
-            System.out.println(currentTimeStr + "请求成功后json转bean出错");
+            System.out.println(currentTimeStr + "请求成功后json转bean出错：" + responseString);
             return;
         }
 

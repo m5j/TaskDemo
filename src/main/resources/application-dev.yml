@@ -13,4 +13,4 @@ spring:
 mybatis:
   type-aliases-package: com.example.taskdemo.entity
   #Mapper指定扫描包
-#  mapper-locations: classpath*:**/repeat/**/*Include.xml,classpath*:**/mapper/xml/**/*.xml
+  mapper-locations: classpath*:**/mapper/xml/**/*.xml
